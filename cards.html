@@ -3,10 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cards</title>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: antiquewhite;
+            font-family: sans-serif;
+            width: 90%;
+            margin: 50px auto;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-around;
+        }
+        .card{
+            width: 22.5%;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin-bottom: 45px;
+
+        }
+        .card-header{
+            background: #d1e445e0;
+            padding: 50px 12px;
+            text-align: center;
+            color: #fff;
+        }
+        .card-body{
+            padding: 30px 12px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .card-body p{
+            line-height: 1.5em;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        .card-body button{
+            width: 100%;
+            padding: 16px 12px;
+            border: none;
+            background: lightblue;
+            color: aqua;
+            transition: all 0.3s ease-in-out;
+        }
+        .card-body button:hover{
+            background: lightblue;
+            color: #21a2cd;
+            transform: scale(1.05);
+        }
+        @media screen and (max-width:1000px) {
+            .card{
+                width: 40%;
+            }
+            
+        }
+
+        @media screen and (max-width:600px) {
+            .card{
+                width: 90%; 
+            }
+            
+        }
+
+
+    </style>
 </head>
 <body>
     
-    
+    <div class="container">
+
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Heading One</h2>
+            </div>
+            <div class="card-body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum nisi molestiae nulla, nam fuga minima, quod officiis quo sapiente sed impedit quis! Eum et animi debitis nesciunt tempora voluptatum!
+                </p>
+                <button>Explore</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>Heading One</h2>
+            </div>
+            <div class="card-body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum nisi molestiae nulla, nam fuga minima, quod officiis quo sapiente sed impedit quis! Eum et animi debitis nesciunt tempora voluptatum!
+                </p>
+                <button>Explore</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>Heading One</h2>
+            </div>
+            <div class="card-body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum nisi molestiae nulla, nam fuga minima, quod officiis quo sapiente sed impedit quis! Eum et animi debitis nesciunt tempora voluptatum!
+                </p>
+                <button>Explore</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>Heading One</h2>
+            </div>
+            <div class="card-body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum nisi molestiae nulla, nam fuga minima, quod officiis quo sapiente sed impedit quis! Eum et animi debitis nesciunt tempora voluptatum!
+                </p>
+                <button>Explore</button>
+            </div>
+        </div>
+
+
+    </div>
 </body>
 </html>
